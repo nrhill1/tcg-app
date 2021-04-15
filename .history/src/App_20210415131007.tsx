@@ -3,7 +3,11 @@ import './App.css';
 
 const API_URL = "https://api.pokemontcg.io/v2/cards/xy7-54"
 
-const requestHeaders: any = {'Accept': 'application/json', 'Content-Type': 'application/json', 'X-Api-Key': process.env.REACT_APP_POKEMONTCG_API_KEY}
+const requestHeaders: any = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'X-Api-Key': process.env.REACT_APP_POKEMONTCG_API_KEY
+        }
 
 function App() {
   const [cards, setCards] = useState<any[]>([])

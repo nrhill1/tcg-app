@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import POKEMONTCG_API_KEY from './env'
 
 const API_URL = "https://api.pokemontcg.io/v2/cards/xy7-54"
-
-const requestHeaders: any = {'Accept': 'application/json', 'Content-Type': 'application/json', 'X-Api-Key': process.env.REACT_APP_POKEMONTCG_API_KEY}
 
 function App() {
   const [cards, setCards] = useState<any[]>([])
@@ -11,7 +10,11 @@ function App() {
   useEffect(() => {
     fetch(API_URL, {
         method: 'GET',
-        headers: requestHeaders
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'X-Api-Key': POKEMONTCG_API_KEY
+        },
     })
     .then(response => response.json())
     .then((data) => setCards(data))
