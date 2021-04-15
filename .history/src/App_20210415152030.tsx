@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     PokemonTCG.findCardByID('xy7-54')
-    .then((card: PokemonTCG.Card)  => setCards([card]))
+    .then((card: PokemonTCG.Card)  => setCards(card))
   })
 
   return (
