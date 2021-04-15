@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <h1>Pokemon TCG Collector</h1>
       {cards.map(card => {
-        return <h1>{card.name}</h1>
+        <h1>{card.name}</h1>
       })}
     </div>
   );
