@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+}
+
+.card-pic {
+  transition: all ease-in-out 400ms;
+}

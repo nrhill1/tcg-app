@@ -17,6 +17,7 @@ function App() {
       <h1>Pokemon TCG Collector</h1>
       { cards ? cards.map((card: PokemonTCG.Card)=> {
         return <div className='card'>
+          <h1 className='card-name'>{card.name}</h1>
           <img src={card.images.small} alt={card.number} className="card-pic"/>
           </div>
       }) : null}

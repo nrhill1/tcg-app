@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.card-pic {
+  transition: all ease-in-out 400ms;
+}
+
+.card-pic:hover {
+  border: 1px solid #679cdb
+  border-radius: 10.5px;
+  transition: scale(1.15);
+}

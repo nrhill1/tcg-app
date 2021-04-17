@@ -9,6 +9,6 @@
 
 .card-pic:hover {
   border: 3.5px solid #679cdb;
-  border-radius: 13.5px;
+  border-radius: 12.5px;
   transform: scale(1.085);
 }
