@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   font-family: 'Spartan', sans-serif;
-  color: #116ede;
-  flex-direction: row;
+  color: #116ede
 }
 
 .card-pic {
   object-fit: contain;
   transition: transform 450ms;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 

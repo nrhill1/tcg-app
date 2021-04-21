@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Spartan', sans-serif;
-  color: #116ede;
-  flex-direction: row;
+  color: #116ede
 }
 
 .card-pic {

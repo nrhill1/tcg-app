@@ -3,7 +3,7 @@ import { PokemonTCG } from 'pokemon-tcg-sdk-typescript'
 
 import './App.css';
 
-const params: PokemonTCG.Parameter = { q: 'set.id:neo1' }
+const params: PokemonTCG.Parameter = { q: 'set:neo1' }
 
 function App() {
   const [cards, setCards] = useState<any>([])

@@ -3,7 +3,7 @@ import { PokemonTCG } from 'pokemon-tcg-sdk-typescript'
 
 import './App.css';
 
-const params: PokemonTCG.Parameter = { q: 'set.id:neo1' }
+const params: PokemonTCG.Parameter[] = [{ q: 'set:neo1' }]
 
 function App() {
   const [cards, setCards] = useState<any>([])
@@ -11,6 +11,7 @@ function App() {
   useEffect(() => {
     PokemonTCG.findCardsByQueries(params)
     .then((cards: PokemonTCG.Card[]) => {
+      console.log(cards)
       setCards(cards)
     })
   }, [])

@@ -8,7 +8,7 @@ const params: PokemonTCG.Parameter = { q: 'set.id:neo1' }
 function App() {
   const [cards, setCards] = useState<any>([])
 
-  useEffect(() => {
+  useEffect(() => 
     PokemonTCG.findCardsByQueries(params)
     .then((cards: PokemonTCG.Card[]) => {
       setCards(cards)
