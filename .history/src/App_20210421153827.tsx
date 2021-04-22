@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Pokémon TCG Collector</h1>
+      <h1>Pokemon TCG Collector</h1>
         <div className="cards">
           { cards ? cards.map((card: PokemonTCG.Card)=> {
             return <div className='card' key={card.id}>

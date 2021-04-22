@@ -17,14 +17,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Pokémon TCG Collector</h1>
-        <div className="cards">
-          { cards ? cards.map((card: PokemonTCG.Card)=> {
-            return <div className='card' key={card.id}>
-              <img src={card.images.small} alt={card.number} className="card-pic"/>
-              </div>
-          }) : null}
-        </div>
+      <h1>Pokemon TCG Collector</h1>
+      <div className="cards">
+      { cards ? cards.map((card: PokemonTCG.Card)=> {
+        return <div className='card' key={card.id}>
+          <img src={card.images.small} alt={card.number} className="card-pic"/>
+          </div>
+      }) : null}
+      </div>
     </div>
   );
 }
